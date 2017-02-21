@@ -217,17 +217,17 @@ open class SCLAlertView: UIViewController {
     open var customSubview : UIView?
     
     // Members declaration
-    var baseView = UIView()
-    var labelTitle = UILabel()
-    var viewText = UITextView()
-    var contentView = UIView()
-    var circleBG = UIView(frame:CGRect(x:0, y:0, width:kCircleHeightBackground, height:kCircleHeightBackground))
-    var circleView = UIView()
-    var circleIconView : UIView?
-    var duration: TimeInterval!
-    var durationStatusTimer: Timer!
-    var durationTimer: Timer!
-    var dismissBlock : DismissBlock?
+    open var baseView = UIView()
+    open var labelTitle = UILabel()
+    open var viewText = UITextView()
+    open var contentView = UIView()
+    open var circleBG = UIView(frame:CGRect(x:0, y:0, width:kCircleHeightBackground, height:kCircleHeightBackground))
+    open var circleView = UIView()
+    open var circleIconView : UIView?
+    open var duration: TimeInterval!
+    open var durationStatusTimer: Timer!
+    open var durationTimer: Timer!
+    open var dismissBlock : DismissBlock?
     fileprivate var inputs = [UITextField]()
     fileprivate var input = [UITextView]()
     internal var buttons = [SCLButton]()
@@ -492,7 +492,7 @@ open class SCLAlertView: UIViewController {
             print("Unknow action type for button")
         }
         
-        if(self.view.alpha != 0.0 && appearance.shouldAutoDismiss){ hideView() }
+        //if(self.view.alpha != 0.0 && appearance.shouldAutoDismiss){ hideView() }
     }
     
     
